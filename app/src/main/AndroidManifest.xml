@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.template" >
+    package="com.example.template">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,10 +10,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.familydetails.FamListMain"></activity>
+        <activity android:name=".ui.Complains.ComplainViewModel" />
+        <activity android:name=".ui.Complains.ComplainFragment" />
+        <activity android:name=".ImageView" />
+        <activity android:name=".Model" />
+        <activity android:name=".MyListAdapter" />
+        <activity android:name=".ui.familydetails.Existing_Mem_Details" />
+        <activity android:name=".ui.familydetails.UsersListMain" />
+        <activity android:name=".ui.familydetails.AddFam_CT" />
+        <activity android:name=".ui.familydetails.Add_New_Member" />
+        <activity android:name=".SendHigher" />
+        <activity android:name=".ReplyUser" />
+        <activity android:name=".ComplainView1" />
+        <activity android:name=".ComListView" /> <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

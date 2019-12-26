@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="?attr/actionBarSize">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B5E9E5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detailsid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/linearlayout1"
+                    android:src="@drawable/details1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsid"
+
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="DETAILS"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/main12">
+
+                    <RelativeLayout
+                        android:id="@+id/relative1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <ImageView
+                            android:id="@+id/famicon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:src="@drawable/family" />
+
+                        <TextView
+                            android:id="@+id/fam_id1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/famicon1"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/famicon1"
+                            android:background="#f2f2f2"
+                            android:hint="FAMILY ID"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/city1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:src="@drawable/city" />
+
+                        <EditText
+                            android:id="@+id/editcity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/city1"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/city1"
+                            android:background="#f2f2f2"
+                            android:hint="CITY"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/town1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:src="@drawable/town" />
+
+                        <EditText
+                            android:id="@+id/edittown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/town1"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/town1"
+                            android:background="#f2f2f2"
+                            android:hint="TOWN"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/house_add"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:src="@drawable/house" />
+
+                        <EditText
+                            android:id="@+id/editADD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/house_add"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/house_add"
+                            android:background="#f2f2f2"
+                            android:focusableInTouchMode="true"
+                            android:hint="ADDRESS"
+                            android:paddingLeft="20dp"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/toilet_avail"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:src="@drawable/toilet" />
+
+                        <Spinner
+                            android:id="@+id/spin1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/toilet_avail"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toRightOf="@id/toilet_avail"
+                            android:background="#f2f2f2"
+                            android:padding="30dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp" />
+
+                        <TextView
+                            android:id="@+id/toiletAvail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/toilet_avail"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/toilet_avail"
+                            android:background="#f2f2f2"
+                            android:hint="IS TOILET AVAILABLE"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Submitfam"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginBottom="17dp"
+                        android:background="#B5E9E5"
+                        android:padding="10dp"
+                        android:text="SUBMIT"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
+
+

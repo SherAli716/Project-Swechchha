@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="?attr/actionBarSize">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B5E9E5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detailsid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/linearlayout1"
+                    android:src="@drawable/details1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsid"
+
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="DETAILS"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/main12">
+
+                    <RelativeLayout
+                        android:id="@+id/fnamerow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/fnamelabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="NAME"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/fname11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/fnamelabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/fnamelabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="FIRST NAME"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/mnamerow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/mnamelabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="M NAME"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/mname11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/mnamelabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/mnamelabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="MIDDLE NAME"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/lnamerow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/lnamelabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="L NAME"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/lname11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/lnamelabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/lnamelabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="LAST NAME"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rationrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/rationlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="RATION ID"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/ration11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/rationlabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/rationlabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="RATION ID"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/genderrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/genderlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="GENDER"
+
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_gender2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#f2f2f2"
+                            android:layout_alignBottom="@id/genderlabel"
+                            android:layout_alignParentTop="true"
+
+
+                            android:paddingLeft="10dp"
+                            android:layout_toRightOf="@id/genderlabel">
+
+                            <RadioButton
+                                android:id="@+id/rb_male2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Male"
+                                android:textSize="18sp"
+
+
+                                android:gravity="center"></RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_female2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Female"
+                                android:textSize="18sp"
+                                android:layout_marginStart="25dp"
+                                android:padding="5dp"
+                                android:gravity="center"></RadioButton>
+
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/contactrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/contactlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="CONTACT NO"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/contact11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/contactlabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/contactlabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:hint="CONTACT NO"
+                            android:focusableInTouchMode="true"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/emailrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/emaillabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="EMAIL ID"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/email11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/emaillabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/emaillabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:hint="EMAIL ID"
+                            android:focusableInTouchMode="true"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/addressrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/addresslabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="ADDRESS"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/address11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/addresslabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/addresslabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:hint="ADDRESS"
+                            android:focusableInTouchMode="true"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/dobrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/doblabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#B5E9E5"
+                        android:padding="4dp"
+                        android:text=" DOB "
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:src="@drawable/family" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="SELECT"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignBottom="@id/doblabel"
+                        android:layout_toRightOf="@id/doblabel"
+                        android:id="@+id/btn_dob2"
+                        android:gravity="center"
+                        android:background="#cccccc"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dob11"
+                        android:gravity="center"
+                        android:text="DATE"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignBottom="@id/doblabel"
+                        android:layout_toRightOf="@id/btn_dob2"
+                        android:background="#f2f2f2" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/spec_able_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/specially_abled_label"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:background="#B5E9E5"
+
+                            android:text="SPECIALLY ABLED STATUS"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_spec_able"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#f2f2f2"
+                            android:layout_alignBottom="@id/specially_abled_label"
+                            android:layout_alignParentTop="true"
+
+
+
+                            android:layout_toRightOf="@id/specially_abled_label">
+
+                            <RadioButton
+                                android:id="@+id/rb_spec_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="YES"
+                                android:textSize="18sp"
+
+
+                                android:gravity="center"></RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_spec_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="NO"
+                                android:textSize="18sp"
+                                android:layout_marginStart="15dp"
+                                android:gravity="center"></RadioButton>
+
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/casterow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/castelabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="CASTE"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/caste11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/castelabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/castelabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="CASTE"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/religionrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/religionlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="RELIGION"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/religion11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/religionlabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/religionlabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="RELIGION"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/is_work_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/is_work_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="IS WORKING"
+
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_is_working"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#f2f2f2"
+                            android:layout_alignBottom="@id/is_work_label"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/is_work_label">
+
+                            <RadioButton
+                                android:id="@+id/rb_is_work_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="YES"
+                                android:textSize="18sp"
+                                android:layout_marginLeft="20dp"
+
+                                android:gravity="center"></RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_is_work_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+
+                                android:gravity="center"
+                                android:text="NO"
+                                android:textSize="18sp"></RadioButton>
+
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/incomerow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <TextView
+                            android:id="@+id/incomelabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#B5E9E5"
+                            android:padding="4dp"
+                            android:text="ANNUAL INCOME"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:src="@drawable/family" />
+
+                        <EditText
+                            android:id="@+id/income11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/incomelabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/incomelabel"
+                            android:background="#f2f2f2"
+                            android:gravity="center"
+                            android:focusableInTouchMode="true"
+                            android:hint="INCOME"
+                            android:paddingLeft="20dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Submitfam"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginBottom="17dp"
+                        android:background="#B5E9E5"
+                        android:padding="10dp"
+                        android:text="SUBMIT"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
