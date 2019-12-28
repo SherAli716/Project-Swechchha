@@ -20,7 +20,7 @@ class UsersListMain : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         rec_users.layoutManager = layoutManager
-      //  val list = mutableListOf<Model>()
+      //  val list = mutableListOf<Model2>()
 
 
 //        val adapter = Adapter_members(this, Suppliermem.members)
@@ -30,7 +30,7 @@ class UsersListMain : AppCompatActivity() {
 //        val keys = res.keys()
 //        keys.forEach {
 //            Log.d("kkk",it)
-//            list.add(Model(res.optJSONObject(it)!!.getString("family_id").toInt(),res.optJSONObject(it)!!.getString("head")))
+//            list.add(Model2(res.optJSONObject(it)!!.getString("family_id").toInt(),res.optJSONObject(it)!!.getString("head")))
 //        }
 
 

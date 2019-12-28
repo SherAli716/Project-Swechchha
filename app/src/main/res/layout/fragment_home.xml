@@ -6,34 +6,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <Button
+        android:id="@+id/Nagesh"
+        android:layout_width="237dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/custom_button"
+        android:text="Crud On CBO Officers"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/family"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/family"
-        android:layout_width="195dp"
-        android:layout_height="52dp"
+        android:layout_width="217dp"
+        android:layout_height="69dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="166dp"
+        android:layout_marginTop="185dp"
         android:layout_marginEnd="108dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="348dp"
         android:background="@drawable/custom_button"
         android:text="Family Details"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttoncom"
+        android:layout_width="279dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="203dp"
+        android:background="@drawable/custom_button"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:text="Click here to see Complaint list"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+        app:layout_constraintTop_toBottomOf="@+id/family" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,23 +24,11 @@ class ComplainView1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_complain_view)
 
-//        var json = (GetData().GETReq("http://192.168.43.176:8000/cbo/view_complains/"))
         Message_id.text = intent.getStringExtra("text")
-
-//        ward.text = JSONObject(json).getJSONObject("25").getString("started_at")
-
         category.text = intent.getStringExtra("category")
         started_at.text = intent.getStringExtra("started_at")
-//        var jobject=JSONObject(json)
-//        var keys = jobject.keys()
-//        Log.d("forl","${keys}")
-//        keys.forEach {
-//            val id = jobject.get(it)
-//            Log.d("forl"," value : $it and $i d")
-//            MessageId.text = JSONObject(json).getJSONObject("$it").getString("text")
-//
-//        }
 
+/*here we are putting  the value into the required position which we have get from the json*/
 
         Reply.setOnClickListener() {
             //            val intent = Intent(this, Main3Activity::class.java)
@@ -48,6 +36,7 @@ class ComplainView1 : AppCompatActivity() {
             val toast = Toast.makeText(applicationContext, "Reply send to the user", Toast.LENGTH_SHORT)
             toast.show()
         }
+        /*For Toast Message */
         send.setOnClickListener() {
             //            val intent = Intent(this, Main4Activity::class.java)
 //            startActivity(intent)

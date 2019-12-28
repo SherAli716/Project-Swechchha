@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Complains.ComplainFragment">
+    tools:context=".ui.Complains.ListViewF2">
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/ListView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

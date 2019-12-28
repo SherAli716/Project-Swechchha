@@ -7,17 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ListView
-import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.template.ComListView
 import com.example.template.R
+import com.example.template.ui.Complains.Firstpg
 import com.example.template.ui.familydetails.FamListMain
-import kotlinx.android.synthetic.main.activity_reply_user.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -46,6 +41,18 @@ class HomeFragment : Fragment() {
             startActivity(intent)
 
 
+        }
+        val click: Button =root.findViewById(R.id.buttoncom)
+        click.setOnClickListener() {
+            Log.d("for", "ok")
+            val intent = Intent(this.context, ComListView::class.java)
+            startActivity(intent)
+        }
+        val nag: Button =root.findViewById(R.id.Nagesh)
+        nag.setOnClickListener() {
+            Log.d("for", "ok")
+            val intent = Intent(this.context,Firstpg::class.java)
+            startActivity(intent)
         }
         return root
 

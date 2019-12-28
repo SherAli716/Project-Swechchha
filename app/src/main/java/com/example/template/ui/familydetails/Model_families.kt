@@ -9,5 +9,5 @@ object RealData {
 
 //    for(i in 1..51)
 //    {
-//        wards += Model("Ward_$i")
+//        wards += Model2("Ward_$i")
 //    }

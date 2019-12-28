@@ -7,9 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.example.template.Model
-
-import com.example.template.R
 
 
 class MyListAdapter(var mCtx:Context , var resource:Int,var items:List<Model>)
@@ -26,7 +23,7 @@ class MyListAdapter(var mCtx:Context , var resource:Int,var items:List<Model>)
         val textView1 : TextView = view.findViewById(R.id.descTv)
 
 
-        var mItems: Model = items[position]
+        var mItems: Model= items[position]
 
 //        imageView.setImageDrawable(mCtx.resources.getDrawable(mItems.photo))
         textView.text = mItems.title
@@ -37,3 +34,30 @@ class MyListAdapter(var mCtx:Context , var resource:Int,var items:List<Model>)
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
